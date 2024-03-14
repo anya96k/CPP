@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+class D
+{
+	int date;
+	int month;
+	int year;
+  public:
+  void getdata()
+     {
+     	cout<<"enter the date,month,year"<<endl;
+     	cin>>date>>month>>year;
+		 }	
+		 void display()
+		 {
+		 	cout<<date<<"-"<<month<<"-"<<year<<endl;
+		 	cout<<date<<"/"<<month<<"/"<<year<<endl;
+		 	cout<<date<<"/"<<monthconverter(month)<<"/"<<year<<endl;
+		 }
+		 string monthconverter(int mon)
+		 {
+		 	string cal[]={"","jan","feb","mar","apr","may","june","jul","aug","sept","oct","nov","dec"};
+		 	return cal[mon];
+		 }
+};
+int main()
+{
+	
+	D d1;
+	d1.getdata();
+	d1.display();
+	return 0;
+}
