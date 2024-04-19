@@ -1,0 +1,25 @@
+#include <iostream>  
+using namespace std;  
+class Student {  
+   public:  
+       int id;    
+       string name;
+       void insert(int i, string n)    
+        {    
+            id = i;    
+            name = n;    
+        }    
+       void display()    
+        {    
+            cout<<id<<"  "<<name<<endl;    
+        }    
+};  
+int main(void) {  
+    Student s1; //object of Student   
+    Student s2; 
+    s1.insert(01, "om");    
+    s2.insert(02, "atharv");    
+    s1.display();    
+    s2.display();  
+    return 0;  
+}
