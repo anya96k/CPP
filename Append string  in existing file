@@ -1,0 +1,51 @@
+#include <fstream>
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+
+    ofstream of;
+
+    fstream f;
+
+   
+
+    
+
+    of.open("Geeks for Geeks.txt", ios::app);
+
+    if (!of)
+
+        cout << "No such file found";
+
+    else {
+
+        of << " String";
+
+        cout << "Data appended successfully\n";
+
+        of.close();
+
+        string word;
+
+       
+
+        
+
+        f.open("Geeks for Geeks.txt");
+
+        while (f >> word) {
+
+            cout << word << " ";
+
+        }
+
+        f.close();
+
+    }
+
+    return 0;
+}
